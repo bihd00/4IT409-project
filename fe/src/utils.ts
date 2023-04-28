@@ -15,7 +15,6 @@ export async function fetchResponse(message: string) {
       headers: { "Content-Type": "application/json" },
       method: "GET",
     });
-    console.log(resp);
     return await resp.json();
   } catch {
     return { status: "error", message: "FETCH_NO_SUCCESS" };

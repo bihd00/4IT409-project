@@ -84,7 +84,6 @@
     status: "RESP" as MessageStatus,
     waiting: true,
   };
-  console.log(initialMessage.tokens);
   chatRecords = [...chatRecords, initialMessage];
 
   setTimeout(() => {
