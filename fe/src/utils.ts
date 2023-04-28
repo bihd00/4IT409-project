@@ -69,7 +69,7 @@ export function parseMessage(response: FetchResponse): Token[] {
     }
   }
 
-  const rxLink = /\b(https?:\/\/\S+)/g;
+  const rxLink = /\b(https?:\/\/\S+\/?)/g;
   const rxMail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const rxAlnum = /^[\p{L}\p{N}]+$/iu;
   const special: { idx: number; char: string }[] = [];
@@ -84,16 +84,18 @@ export function parseMessage(response: FetchResponse): Token[] {
       token.type = ttypes.MAIL;
     }
     const lastChar = token.content[token.content.length - 1];
-    if (lastChar && !lastChar.match(rxAlnum)) {
+    if (lastChar && !lastChar.match(rxAlnum) && token.type !== ttypes.LINK) {
       special.push({ idx: i, char: lastChar });
       token.content = token.content.slice(0, token.content.length - 1);
     }
   }
+  let idx = 1;
   for (let record of special) {
-    tokens.splice(record.idx, 0, {
+    tokens.splice(record.idx + idx, 0, {
       type: ttypes.SPECIAL,
       content: record.char,
     });
+    idx++;
   }
   return tokens;
 }
