@@ -78,6 +78,22 @@
     chatInputDisabled = false;
     setTimeout(() => chatInput.focus(), 10);
   }
+
+  const initialMessage = {
+    tokens: parseMessage({ status: "success", message: " " }),
+    status: "RESP" as MessageStatus,
+    waiting: true,
+  };
+  console.log(initialMessage.tokens);
+  chatRecords = [...chatRecords, initialMessage];
+
+  setTimeout(() => {
+    chatRecords[chatRecords.length - 1].waiting = false;
+    chatRecords[chatRecords.length - 1].tokens = parseMessage({
+      status: "success",
+      message: "Ahoj! Zeptej se mě!",
+    });
+  }, Math.floor(Math.random() * 2 * 1000) + 2000);
 </script>
 
 <svelte:window on:keydown={handleShiftDown} on:keyup={handleShiftUp} />
@@ -118,6 +134,9 @@
                     <span>Promiň, nerozumím</span>
                   {/if}
                   {#if type === ttypes.WORD}
+                    <span>{content}</span>
+                  {/if}
+                  {#if type === ttypes.SPECIAL}
                     <span>{content}</span>
                   {/if}
                   {#if type === ttypes.BREAK}
