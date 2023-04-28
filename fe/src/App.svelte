@@ -52,7 +52,7 @@
 
   async function sendMessage(message: string) {
     const pMessage = parseMessage({ status: "success", message });
-    const pWaiting = parseMessage({ status: "success", message: " " });
+    const pWaiting = parseMessage({ status: "success", message: "" });
 
     chatRecords = [
       ...chatRecords,
@@ -80,7 +80,7 @@
   }
 
   const initialMessage = {
-    tokens: parseMessage({ status: "success", message: " " }),
+    tokens: parseMessage({ status: "success", message: "" }),
     status: "RESP" as MessageStatus,
     waiting: true,
   };
@@ -92,7 +92,7 @@
       status: "success",
       message: "Ahoj! Zeptej se mě!",
     });
-  }, Math.floor(Math.random() * 2 * 1000) + 2000);
+  }, Math.floor(Math.random() * 2 * 1000) + 1500);
 </script>
 
 <svelte:window on:keydown={handleShiftDown} on:keyup={handleShiftUp} />
@@ -105,8 +105,9 @@
         <h1 class="text-4xl md:text-7xl font-bold">
           <span class="text-[#009982] mr-1">FIS</span><span class="">Bot</span>
         </h1>
-        <img src={FisLogoEN} alt="" class="h-[90%] me-[-0.75rem]" />
+        <img src={FisLogoEN} alt="" class="h-[80%] me-[-0.75rem]" />
       </div>
+      <div class="w-4/5 bg-[#009982] rounded h-1" />
     </div>
     <!--  -->
     <div class="flex flex-col items-center grow max-h-full overflow-hidden">
@@ -128,20 +129,17 @@
                 {#each record.tokens as { type, content }, i}
                   {#if type === ttypes.ERROR}
                     <span>Došlo k chybě</span>
-                  {/if}
-                  {#if type === ttypes.NOMATCH}
+                  {:else if type === ttypes.NOMATCH}
                     <span>Promiň, nerozumím</span>
-                  {/if}
-                  {#if type === ttypes.WORD}
+                  {:else if type === ttypes.WORD}
                     <span>{content}</span>
-                  {/if}
-                  {#if type === ttypes.SPECIAL}
+                  {:else if type === ttypes.SPACE}
+                    <span class="me-1" />
+                  {:else if type === ttypes.SPECIAL}
                     <span>{content}</span>
-                  {/if}
-                  {#if type === ttypes.BREAK}
+                  {:else if type === ttypes.BREAK}
                     <br />
-                  {/if}
-                  {#if type === ttypes.MAIL}
+                  {:else if type === ttypes.MAIL}
                     <a
                       href="mailto:{content}"
                       target="_blank"
@@ -150,8 +148,7 @@
                         ? 'text-[#009982] hover:border-[#009982]'
                         : 'text-[#252525] hover:border-[#252525]'}">{content}</a
                     >
-                  {/if}
-                  {#if type === ttypes.LINK}
+                  {:else if type === ttypes.LINK}
                     <a
                       href={content}
                       target="_blank"
