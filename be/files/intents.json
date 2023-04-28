@@ -1,0 +1,1265 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Ahoj",
+        "Jak se máš",
+        "Je tam někdo?",
+        "Dobrý den",
+        "Čau",
+        "Hele",
+        "Zdravím"
+      ],
+      "responses": [
+        "Ahoj!",
+        "Těší mě, že tě vidím!",
+        "Zdravím, jak ti mohu pomoci?"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": ["Sbohem", "Odcházím", "Měj se dobře", "Tak zase příště"],
+      "responses": [
+        "Je mi smutno, že odcházíš :(",
+        "Uvidíme se později",
+        "Sbohem!"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "potvrzeni-o-studiu",
+      "patterns": [
+        "Potvrzení o studiu",
+        "Jak získám potvrzení o studiu?",
+        "Kde seženu potvrzení o studiu?",
+        "Jakou má platnost potvrzení o studiu?"
+      ],
+      "responses": [
+        "Potvrzení o studiu získáš následovně. V Portálu studenta v aplikaci Potvrzení o studiu klikneš na nové tlačítko Elektronické potvrzení o studiu. Nejpozději za hodinu bude digitálně podepsaný soubor dostupný ke stažení v úložišti dokumentů. Odkaz: \nhttps://insis.vse.cz/auth/uloziste/index.pl?rezim=2\n\nElektronické potvrzení o studiu se vydává pro aktuální semestr. Je možné, že někde budou vyžadovat potvrzení o studiu v papírové podobě. V tomto případě můžeš s PDF souborem dojít na kontaktní místo CzechPoint (pošta, většina obecních úřadů), a zde si za mírný poplatek nechat vytisknout úředně ověřenou kopii potvrzení o studiu."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "erasmus",
+      "patterns": [
+        "Studium v zahraničí",
+        "Chci studovat v zahraničí",
+        "Kam jde vyjet na erasmus?",
+        "Výměnný pobyt",
+        "Do jaké země lze vyjet v rámci erasmu?",
+        "Lze studovat v zahraničí?"
+      ],
+      "responses": [
+        "Fakulta podporuje jak výjezdy studentů na semestrální výměnné pobyty, tak i zapojování zahraničních profesorů do běžné výuky. Podrobnější informace nalezneš zde: https://fis.vse.cz/obecne-informace/studium-v-zahranici/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "stipendium",
+      "patterns": [
+        "Stipendium",
+        "Prospěchové stipendium",
+        "Ubytovací stipendium",
+        "Jak zažádat o ubytovací stipendium?",
+        "Kdy mám nárok na stipendium?"
+      ],
+      "responses": [
+        "Veškeré informace nalezneš na této webové stránce:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Stipendia-a-poplatky(2).aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "kredity",
+      "patterns": [
+        "Kreditové poukázky",
+        "Kolik potřebuji kreditů k dokončení studia",
+        "Jak je to s kredity",
+        "Kredity",
+        "Počet kreditů"
+      ],
+      "responses": [
+        "Na VŠE funguje systém kreditových poukázek, více se o nich dozvíš na stránce:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Kreditov%C3%A9-pouk%C3%A1zky,-kredity-a-jejich-%C4%8Derp%C3%A1n%C3%AD.aspx\n\nK dokončení bakalářského studia je potřeba 180 kreditů. U magisterského se jedná o 120 kreditů."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "registrace-a-zapisy",
+      "patterns": [
+        "Chci si registrovat předměty",
+        "Registrace předmětů",
+        "Jak si zapsat předměty?",
+        "Zápisy předmětů",
+        "Přihláška předmětů",
+        "Zápisy"
+      ],
+      "responses": [
+        "Všechny potřebné informace ohledně registrací a zápisů nalzneš zde:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Registrace-a-zápisy-předmětů.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "harmonogram",
+      "patterns": [
+        "Harmonogram",
+        "Harmonogramy předmětů",
+        "Začátek semestru",
+        "Konec semestru",
+        "Kdy začíná letní semestr?",
+        "Kdy začíná zkouškové období?"
+      ],
+      "responses": [
+        "Všechny harmonogramy nalezneš na webové stránce: https://www.vse.cz/studenti/studium/harmonogramy/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "uznavani-predmetu",
+      "patterns": [
+        "Uznávání",
+        "Uznávání předmětů",
+        "Kdy mi budou uznány předměty?",
+        "Je možné uznání předmětu?"
+      ],
+      "responses": [
+        "Uznávání předmětů je možné, podrobné informace i s příklady zjistíš zde:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Uzn%C3%A1n%C3%AD-p%C5%99edm%C4%9Bt%C5%AF.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "standardni-doba-studia",
+      "patterns": [
+        "Doba studia",
+        "Standardní doba studia",
+        "Délka studia",
+        "Jak dlouho budu studovat?"
+      ],
+      "responses": [
+        "Informaci o strandardní době studia naleznete na intranetu: https://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Omluven%C3%AD-p%C5%99edm%C4%9Btu.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "nadkapacitni-zapisy",
+      "patterns": [
+        "Nadkapacitní zápis",
+        "Nadkapacitní",
+        "Na předmětu je maximální kapacita",
+        "Byla naplněna maximální kapacita",
+        "Předmět je zaplněný"
+      ],
+      "responses": [
+        "Nadkapacitní zápisy jsou možné pouze v ojedinělých případech po dohodě a potvrzení od vyučujícího. Následně je nutné předložit dané potvrzení na studijním oddělení."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "zadosti-insis",
+      "patterns": [
+        "Žádosti",
+        "E-žádosti",
+        "insis žádost",
+        "Podání žádosti přes insis"
+      ],
+      "responses": [
+        "Zajímá tě jak podat e-žádosti přes Insis a co vše přes něj můžeš vyřešit? Podívej se na návod zde: https://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Elektronick%C3%A9-%C5%BE%C3%A1dosti.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "it-aplikace",
+      "patterns": [
+        "IT aplikace",
+        "Eduroam",
+        "Microsoft",
+        "Office 365",
+        "Wifi",
+        "Internet",
+        "Aplikace"
+      ],
+      "responses": [
+        "Chceš pomoc s nastavením wifi, Office 365, instalací Windows nebo cokoliv dalšího? Podívej se na odkaz, kde nalezneš šikovné návody: https://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/IT-zajisteni-studia.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "menza",
+      "patterns": [
+        "Co je dnes k obědu?",
+        "Menza",
+        "Oběd",
+        "Jídlo",
+        "Potřebuju jíst"
+      ],
+      "responses": [
+        "Obědové menu si můžete prohlédnout zde: https://www.vse.cz/menza/stravovani-zizkov/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "isic",
+      "patterns": [
+        "ISIC",
+        "Identifikační karta",
+        "Id karta",
+        "Jak si aktivovat ISIC?",
+        "Jak si obnovit ISIC?",
+        "Studentský průkaz"
+      ],
+      "responses": [
+        "Detailní informace ohledně identifikačních karet nalezneš zde: https://ci.vse.cz/id-karty/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "studijni-oddeleni",
+      "patterns": [
+        "Studijní oddělení",
+        "Otevírací doba studjního oddělení",
+        "Úřední hodiny",
+        "Studijní referentky",
+        "Kdy mohu přijít na studijní oddělení?"
+      ],
+      "responses": [
+        "Informace související se studijním oddělením včetně otevírací doby nalezneš zde:\nhttps://fis.vse.cz/fakulta/organy-fakulty/studijni-oddeleni/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "co-umis",
+      "patterns": ["Co umíš?", "Co dovedeš?", "Co dokážeš?", "Co všechno víš?"],
+      "responses": [
+        "Ahoj, snažím se ti pomoc s tvými dotazy.",
+        "Ahoj, pomůžu ti odpovědět na základní dotazy ohledně studia."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "prijimaci-zkousky",
+      "patterns": [
+        "Přijímací zkoušky",
+        "Přijímačky",
+        "Podmínky přijetí",
+        "Percentil pro přijetí",
+        "Bodová hranice pro přijetí",
+        "Okruhy ke zkouškám",
+        "Z čeho se dělají přijímací zkoušky?"
+      ],
+      "responses": [
+        "Všechny informace ohledně přijímacího řízení nalezneš zde: https://www.scio.cz/nsz/testy/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "prihlasky-2",
+      "patterns": [
+        "Přihlášky",
+        "Do kdy podat přihlášku?",
+        "Podání přihlášky",
+        "Kdy je deadline podání příhlášky?",
+        "Přihláška na magistra",
+        "Přihláška na bakaláře",
+        "Kde podat přihlášku?"
+      ],
+      "responses": [
+        "Přihlášku na bakalářské a magisterské studium můžeš podávat do 30.4. Podání přihlášky na doktorské studium je do 31.5.\n\nVíce o přihláškách na bakalářské studium nalezneš zde: https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/\n\nVíce o přihláškách na magisterské studium nalezneš zde: https://fis.vse.cz/magisterske-studium/prijimaci-rizeni/\n\nVíce informací o přihláškách na doktorské studium: https://fis.vse.cz/doktorske-studium/prijimaci-rizeni/\n\nVíce informací o přihláškách na MBA nalezneš zde: https://www.databusiness.cz/dabm/mba-registrace/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "matematika",
+      "patterns": [
+        "Matematika",
+        "Jak je těžká matematika?",
+        "Zvládnu matematiku?",
+        "Matika",
+        "Úroveň matematiky"
+      ],
+      "responses": [
+        "Matematiky se bát nemusíš, ale důležitá je znalost středoškolské matematiky v následujících oblastech:\n\nRovnice a nerovnice\nPosloupnosti a funkce\nExponenciální a logaritmická funkce\nGoniometrické funkce\nKomplexní čísla\nKombinatorika\nAnalytická geometrie\n\nDoporučená literatura k přípravě:\nKlůfa J.: Matematika – Vše pro přípravu k přijímacím zkouškám na VŠE, Ekopress, Praha, 2019. \n\nPokud se chceš zeptat přímo současných studentů na jejich zkušenosti se studiem matematiky na fakultě, neváhej se zeptat zde: https://www.stacisezeptat.cz/."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "koleje",
+      "patterns": [
+        "Koleje",
+        "Ubytování",
+        "Jak si zařídit kolej?",
+        "Ubytování pro studenty",
+        "Jaké má VŠE koleje?"
+      ],
+      "responses": [
+        "Chceš se více dozvědět o kolejích? Přejdi na tento odkaz, kde najdeš vše podstatné o ubytování na kolejích: https://fis.vse.cz/obecne-informace/ubytovani-na-kolejich/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "cim-budu",
+      "patterns": [
+        "Čím budu?",
+        "Uplatnění absolventů",
+        "Uplatnění",
+        "Co ze mě bude?",
+        "Zaměstnání"
+      ],
+      "responses": [
+        "Fakulta FIS nabízí široké uplatnění absolventů. Po odstudování programů se studenti nejčastěji stávají datovými analytiky, specialisty na podnikové procesy nebo manažery IT systémů. Podrobnější informace nalezneš u jednotlivých bakalářských programů zde: https://fis.vse.cz/bakalarske-studium/bakalarske-programy/\na u magisterských zde: https://fis.vse.cz/magisterske-studium/magisterske-programy/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "statnice",
+      "patterns": [
+        "Průběh státnic",
+        "Jak probáhají státnice?",
+        "Státnice",
+        "Závěrečná zkouška",
+        "Informace ke státnicím"
+      ],
+      "responses": [
+        "Kompletní informace ohledně státní zkoušky nalezneš na adrese:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Informace-pro-jednotliv%C3%A9-obory-(bc.).aspx\n\nInformace ohledně obhajoby závěrečné práce jsou k dispozici zde:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Obhajoba-bakal%C3%A1%C5%99sk%C3%A9-pr%C3%A1ce.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "vzory-testu",
+      "patterns": [
+        "Vzory testů ",
+        "Testy",
+        "Zadání testů",
+        "Najdu někde vzor přijímacích zkoušek na magisterské obory FISu?"
+      ],
+      "responses": [
+        "Okruhy a vzorové testy přijímacích zkoušek SCIO můžeš nalézt zde: https://www.scio.cz/nsz/testy/\n\nOkruhy u magisterských přijímaček jsou vypsané včetně literatury na webu.  Vzorové testy nejsou k dispozici. Více informací nalezneš zde:\nhttps://fis.vse.cz/magisterske-studium/okruhy-a-literatura-k-prijimaci-zkousce/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "kalkulacka",
+      "patterns": [
+        "Kolik je 7+7?",
+        "Umíš počítat?",
+        "1+1",
+        "2+2",
+        "Kalkulačka",
+        "Jsi kalkulačka?"
+      ],
+      "responses": [
+        "Nejsem kalkulačka, takže tenhle dotaz ti nezodpovím. :)",
+        "Nejsem kalkulačka, jsem chatbot. Zeptej se mne prosím na něco okolo VŠE."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "mba-cena",
+      "patterns": [
+        "Kollik stojí studium MBA?",
+        "Cena programu Master of Business Administration",
+        "Kolik zaplatím za magisterské studium?",
+        "Kolik dám za inženýra?"
+      ],
+      "responses": ["Školné za MBA je ve výši 280 000 Kč"],
+      "context_set": ""
+    },
+
+    {
+      "tag": "ux-design",
+      "patterns": [
+        "Je Ux design oborová nebo vedlejší specializace?",
+        "co je UX",
+        "UX design",
+        "programová specializace",
+        "Dobrý den, chtěla jsem se zeptat, zda budete organizovat nějaké přípravné kurzy na magisterské studium nového oboru UX výzkum a design? Děkuji za odpověď.",
+        "specializace UX"
+      ],
+      "responses": [
+        "UX-design je programová specializace v rámci programu informační systémy a technologie. Více informací nalezneš zde: https://fis.vse.cz/zpravodaj/fis-otevre-novou-ux-specializaci-v-magisterskem-programu-informacni-systemy-a-technologie/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "studijni-plany-magistr",
+      "patterns": [
+        "plán studia",
+        "potřeboval bych se podívat na studijní plány ",
+        "magisterské studijní plány",
+        "magisterské",
+        "magistr"
+      ],
+      "responses": [
+        "Více informací ohledně programů a studijních plánů nalezneš na adrese:\nhttps://fis.vse.cz/magisterske-studium/magisterske-programy/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "studijni-plany-bakalar",
+      "patterns": [
+        "plán studia",
+        "potřeboval bych se podívat na studijní plány ",
+        "bakalářské studijní plány",
+        "bakalářské",
+        "bakalář"
+      ],
+      "responses": [
+        "Veškeré informace ohledně programů a studijních plánů nalezneš na webu https://fis.vse.cz/bakalarske-studium/bakalarske-programy/.\n\nPokud bys měl specifické dotazy, neváhej se obrátit přímo na studenty daných programů: https://www.stacisezeptat.cz/",
+        "Více informací ohledně programů a studijních plánů nalezneš na adrese:\nhttps://fis.vse.cz/magisterske-studium/magisterske-programy/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis",
+      "patterns": [
+        "insis",
+        "co je insis",
+        "K čemu je insis?",
+        "informační studijní systém",
+        "informační systém pro studenta"
+      ],
+      "responses": [
+        "V Insisu nalezneš například syllaby, obsah předmětů s jejich vyučujícími a garanty"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "jak-se-mas",
+      "patterns": [
+        "Jak se máš",
+        "Jak ti je",
+        "Jak se mas?",
+        "Ahoj, jak se máš?",
+        "čau, jak se máš?",
+        "jak se máte?"
+      ],
+      "responses": ["Mám se dobře. Jak se máš ty?"],
+      "context_set": ""
+    },
+
+    {
+      "tag": "informace-pro-cizince",
+      "patterns": [
+        "Zkouška z češtiny pro cizince",
+        "Cizinec",
+        "jsem ze zahraničí",
+        "jsem cizinec",
+        "mohu u vas studovat když nejsem čech",
+        "test z čj",
+        "Jak dostanu vizum?"
+      ],
+      "responses": [
+        "Detailní informace ohledně podmínek a náležitostech při studiu na VŠE pro cizince nalezneš na adrese: fis.vse.cz/bakalarske-studium/informace-pro-cizince/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "nulty-rocnik-multimedia",
+      "patterns": [
+        "Za jakých podmínek se přijímá do nultého ročníku?",
+        "nultý ročník",
+        "nulty rocnik",
+        "jaké jsou podmínky pro nultý ročník",
+        "nultý ročník multimedii"
+      ],
+      "responses": [
+        "Podmínky nultého ročníku Multimédií jsou zde: https://kme.vse.cz/studium/kurzy-pro-verejnost/rocni-akademie-multimedii/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "dod",
+      "patterns": [
+        "Den otevřených dvěří",
+        "Kdy je den otevřených dveří",
+        "mohu se přijít podívat",
+        "kdy se k vám mohu podívat",
+        "jak se k vám podívám",
+        "budete mít někdy den otevrenych dveri",
+        "DOD bude on-line?"
+      ],
+      "responses": [
+        "Více informací ke dni otevřených dvěří nalezneš zde: https://fis.vse.cz/obecne-informace/den-otevrenych-dveri/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "proc-fis",
+      "patterns": [
+        "Proč jít na FIS",
+        "proč fis",
+        "Proč bych měl jít právě na FIS?",
+        "proč jít k vám",
+        "z jakého důvodu bych měl jít k vám",
+        "proč k vám",
+        "proč si vybrat zrovna vás"
+      ],
+      "responses": [
+        "Podívej se na důvody proč jít studovat k nám na FIS:\nhttps://fis.vse.cz/fakulta/proc-studovat-na-fis/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "termin-bakalarske-prace",
+      "patterns": [
+        "Termín odevzdávání bakalářské práce",
+        "Kdy se musí odevzdat bakalářská práce?",
+        "do kdy musim odevzdat bakalarskou praci",
+        "deadline BP",
+        "jaký je deadline bakalářky",
+        "termín bakalářské práce",
+        "bakalářská práce"
+      ],
+      "responses": [
+        "Informace k odevzdávání bakalářské práce nalezneš zde: https://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Odevzd%C3%A1n%C3%AD-bakal%C3%A1%C5%99sk%C3%A9-pr%C3%A1ce.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "vedlejsi-specializace",
+      "patterns": [
+        "Vedlejší specializace",
+        "všechny vedlejší specializace",
+        "Vedlejší specializace?",
+        "jaké jsou ostatní specializace",
+        "jaké jsou vedlejší povinnosti",
+        "vedlejška"
+      ],
+      "responses": [
+        "Při studiu na magisterském programu na FISu si vybíráš i vedlejší specializaci. Přehled těchto specializací nalezneš zde: https://fis.vse.cz/magisterske-studium/vedlejsi-specializace/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "rozvrh-prvni-rocnik",
+      "patterns": [
+        "Rozvrh první ročník",
+        "Dostanu sestavený rozvrh?",
+        "jak si sestavím rozvrh",
+        "kdo sestavuje rozvrh",
+        "rozvrh v prváku",
+        "dostanu již sestavený rozvrh v prvním semestru?"
+      ],
+      "responses": [
+        "Na bakaláři v 1. semestru dostávají všichni předem sestavený rozvrh. Následně si již rozvrh volíš podle svých preferencí."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "osp",
+      "patterns": [
+        "OSP",
+        "Scio OSP i Scio AJ?",
+        "uznavate osp",
+        "obecné studijní předpoklady",
+        "národní srovnávací zkoušky"
+      ],
+      "responses": [
+        "Detailnější informace ohledně uznávání OSP nalezneš zde:\nhttps://www.scio.cz/nsz/fakulta.asp?FID=112"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "poplatky-prihlaska",
+      "patterns": [
+        "Je potřeba platit za každou přihlášku?",
+        "Manipulační poplatek za každou přihlášku",
+        "poplatky za přihlášku",
+        "Poplatky spojené s přihláškou",
+        "Poplatek za přihlášku"
+      ],
+      "responses": [
+        "Za každou přihlášku je potřeba zaplatit manipulační poplatek."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "skolne-a-poplatky",
+      "patterns": [
+        "Poplatky",
+        "Výše školného",
+        "Co se musí platit?",
+        "školné",
+        "kolik stojí bakalářské studium",
+        "cena za semestr",
+        "kolik stoji skolne, kdyz je mi nad 26 let"
+      ],
+      "responses": [
+        "Výši poplatků spojených se studiem stanovuje a každoročně aktualizuje rektorát VŠE.\n\nPříkaz rektorky stanovující výši poplatků pro akademický rok 2021/2022 naleznete na webu: https://www.vse.cz/predpisy/poplatky-spojene-se-studiem-v-akademickem-roce-2022-2023/\n\nŽádost o přezkoumání rozhodnutí o vyměření poplatku spojeného se studiem je ke stažení https://www.vse.cz/studenti/studium/studijni-predpisy/zadost-o-prezkoumani-rozhodnuti-o-vymereni-poplatku-spojeneho-se-studiem/\n\nVeškeré informace ohledně poplatků za studium vám poskytne paní Kristina Kurišová na emailu kurisovk@vse.cz."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "odpusteni-zkousek-studentum-ze-zahranici",
+      "patterns": [
+        "Dobrý den, je možnost prominutí přijímací zkoušky pro uchazeče ze zahraničí?",
+        "Odpuštění zkoušky pro studenty ze zahraničí",
+        "Prominutí zkoušky pro studenta ze zahraničí",
+        "Zahraniční student odpuštění zkoušky"
+      ],
+      "responses": [
+        "Uchazečům o české studijní programy ze zahraniční nejde přijímací zkoušky odpustit. Nesplňují kritéria pro tento typ přijetí."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "multimedia-pocet-prijatych",
+      "patterns": [
+        "počet studentů multimédia",
+        "počet přijímaných na multimédia",
+        "Kolik studentů se přijímá na obor Multimedia v ekonomické praxi?",
+        "Dobrý den, mohl bych se zeptat, kolik studentů je přijímáno na obor multimédia v ekonomické praxi?",
+        "Jaký byl poměr přijatých a nepřijatých uchazečů v minulých letech na obor Multimédia v ekonomické praxi?",
+        "chtěla bych se zeptat kolik lidí se průměrně hlásí na program Multimédia v ekonomické praxi",
+        "Kolik se tak v průměru prosím hlasí lidí na kme?"
+      ],
+      "responses": [
+        "Na Multimédia v ekonomické praxi je v průměru přijato 10 % uchazečů.  V průměru se hlásí více než 600 uchazečů."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "multimedia-odpusteni-zkousek",
+      "patterns": [
+        "Přijímací zkoušky multimédia",
+        "Prominutí zkoušek multimédia",
+        "Multimédia v ekonomické praxi přijímací zkoušky",
+        "Multimédia zkoušky"
+      ],
+      "responses": [
+        "Multimédia v ekonomické praxi nepromíjí přijímací zkoušky. Je třeba absolvovat oba testy Národních srovnávacích zkoušek – OSP a anglický jazyk."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "neuspech-u-predmetu",
+      "patterns": [
+        "neúspěch u předmětu",
+        "Zapsání povinného předmětu znova",
+        "Neudělal jsem předmět",
+        "Co když mám 4 z předmětu?"
+      ],
+      "responses": [
+        "V případě, že neuspěješ u povinného předmětu, musíš si ten samý zapsat znovu. V případě, že neuspěješ u volitelného předmětu, můžeš si zapsat jiný z nabídky volitelných."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "preruseni-studia",
+      "patterns": [
+        "Absence",
+        "Přerušení studia",
+        "Dlouhodobě nemocný, absence",
+        "Co mám dělat v případě, že chci přerušit studium",
+        "Omluvení ze semestru",
+        "co když budu dlouhodobě nemocný",
+        "je možné se omluvit když jsem dlouhodobě nemocný"
+      ],
+      "responses": [
+        "Více informací k dlouhodobé absenci a přerušení studia nalezneš zde: https://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Dlouhodob%C3%A1-absence-a-p%C5%99eru%C5%A1en%C3%AD-studia.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "verejna-skola",
+      "patterns": [
+        "Je tohle veřejná škola?",
+        "Je tohle soukromá škola?",
+        "veřejná škola",
+        "Je tohle státní škola?",
+        "Patří VŠE mezi veřejné státní školy?"
+      ],
+      "responses": ["VŠE je veřejná škola."],
+      "context_set": ""
+    },
+
+    {
+      "tag": "percentil-multimedia",
+      "patterns": [
+        "Dobrý den chtěl bych se zeptat na potřebný percentil ze SCIO testů pro vaši fakultu. V podmínkách jsem tuto informaci nenašel, děkuji.",
+        "Kolik studentů se příjmá na multimedia?",
+        "Jaký je percentil na multimedia?",
+        "Percentil multimedia",
+        "zajímalo by mě jaký je přibližně percentil v mezinarodních testech abych se dostal na FIS obor Multimédia v ekonomické praxi",
+        "Kolik % u scio testů bylo potřeba pro multimédia a komunikace přibližně v posledních 3 letech ? ",
+        "percentil v minulých letech"
+      ],
+      "responses": [
+        "Na program multimedia v ekonomické praxi příjímáme 60 studentů.",
+        "Na Multimédia v ekonomické praxi je v průměru přijato 10 % uchazečů. V průměru se hlásí více než 600 uchazečů."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "doktorske-studium",
+      "patterns": [
+        "doktorské studium",
+        "Chtěl bych jít na doktorské studium, co mi o tom povíš",
+        "Chtěl bych jít na doktorské studium, co mi o tom můžeš povědět?",
+        "Jaké je u vás výše doktorského stipendia?",
+        "Má cenu si dělat doktorát?",
+        "phd"
+      ],
+      "responses": ["O který z doktorských programů máš zájem?"],
+      "context_set": ""
+    },
+
+    {
+      "tag": "promoce",
+      "patterns": [
+        "promoce",
+        "Jak probíhají promoce?",
+        "Kdy se budou konat tento rok promoce?",
+        "Jak mám přijít oblečený na promoce?",
+        "Kde se budou konat promoce?",
+        "udělení akademického titulu"
+      ],
+      "responses": [
+        "Termíny nejblížších magisterských promocí jsou k nalezení na adrese:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Promoce.aspx",
+        "Termíny nejblížších magisterských promocí jsou k nalezení na adrese:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Promoce.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "casova-narocnost",
+      "patterns": [
+        "Jaka je casova narocnost studia?",
+        "Kolik času musím věnovat studiu",
+        "studium časová náročnost",
+        "Kolik hodin strávím učením?",
+        "Lze při studiu pracovat?",
+        "Práce při studiu",
+        "Pracovní úvazek"
+      ],
+      "responses": [
+        "Chceš jít studovat inženýra, ale nevíš jak to dát dohromady s prací? Podívej se, jak se to dá zkombinovat a mít i čas pro sebe: https://fis.vse.cz/magisterske-studium/casova-narocnost/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "prominuti-zkousek",
+      "patterns": [
+        "Jak zažádat o prominutí přijímaček na magistra (obor Informační management)",
+        "Jak se dostanu na miagistra bez příjmaček",
+        "Prominutí prijmacek magistr",
+        "Prominutí přijímacího řízení",
+        "Můžu se dostat na magisterské studium bez absolvování přijímacích zkoušek?"
+      ],
+      "responses": [
+        "Děkan FIS může prominout příjimací zkoušku, pokud uchazeč ukončil bakalářské studium v šestém semestru, nebyli mu přiděleny dodatečné poukázky a má průměr do 2.00"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "mba-program",
+      "patterns": [
+        "Chtěl bych vědět více o mba programu?",
+        "Co je to mba",
+        "mba",
+        "Master in Business Administration",
+        "Program na MBA"
+      ],
+      "responses": [
+        "FIS nabízí datové MBA. Jedná se o jediné datově a analyticky orientované MBA ve střední Evropě. Program vznikl ve spolupráci se společností KPMG Česká republika a v programu vystupuje řada odborníků z praxe. Pro více informací přejdi na web:\nhttps://www.databusiness.cz/dabm/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "videa",
+      "patterns": [
+        "videa",
+        "Ukážeš mi jak to na FISu vypadá?",
+        "Máš nějaká videa?",
+        "Máš nějaké video příručky?",
+        "Máš nějaká videa pro začátečníky?"
+      ],
+      "responses": [
+        "Podívej se na zajímavé videopříručky pro nováčky od našich studentů ze studentského spolu 4FIS. Najdeš zde odpovědi na své dotazy a poznáš současné studenty fakulty: https://fis.vse.cz/obecne-informace/video-prirucky/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "prominuti-zkousek-bakalar",
+      "patterns": [
+        "Bakalářské přijetí bez příjímaček",
+        "Jaké jsou podmínky přijetí bez příjimaček",
+        "Vyplňuji přihlášku a chci zaslat písemnou žádost o prominutí přijímací zkoušky, stačí zaslat vyplněný dokument ve formátu .pdf?",
+        "Dobrý den, chci se zeptat, k prominutí přijímacích zkoušek -matematika v ekonomii -je potřeba splnit všechny body (4) nebo stačí jeden z bodů? Děkuji",
+        "prominutí přijímací zkoušky"
+      ],
+      "responses": [
+        "Zákonnou podmínkou přijetí do bakalářského studijního programu je dosažení úplného středního nebo úplného středního odborného vzdělání.\n\nFakulta informatiky a statistiky (dále jen FIS či fakulta) bude pro přijímání do všech studijních programů vycházet z výsledků testu Obecných studijních předpokladů(OSP)/Všeobecných študijných predpokladov (VŠP) v rámci Národních srovnávacích zkoušek (NSZ) organizovaných společností SCIO. Na test se uchazeč hlásí sám na webových stránkách společnosti SCIO. Pro správné předání výsledků je nutné, aby si uchazeč ve svém profilu na stránkách společnosti SCIO nastavil souhlas s předáním výsledků Fakultě informatiky a statistiky. Výsledky testu Národních srovnávacích zkoušek uchazeči fakultě jednotlivě nezasílají. Uchazečům, kteří nedají souhlas s poskytnutím výsledků fakultě a zároveň nebudou přijati bez přijímacích zkoušek, děkan fakulty vydá rozhodnutí o nepřijetí ke studiu.\nVíce informací nalezneš zde: https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "magistr-zajemce-o-studium",
+      "patterns": [
+        "Chci k vám na magistra",
+        "ing",
+        "Jak se dostanu k Vám na magistra",
+        "Co bych měl vědět, když se k vám hlásím na magistra",
+        "mgr",
+        "Magistr",
+        "jaké máte magisterské programy"
+      ],
+      "responses": [
+        "Více informací ohledně programů a studijních plánů nalezneš na adrese:\nhttps://fis.vse.cz/magisterske-studium/magisterske-programy/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "bakalar-zajemce-o-studium",
+      "patterns": [
+        "bakalar",
+        "bakalářské studium",
+        "Zajímají mě u vás možnosti studia na bakaláře",
+        "Bakalářské programy",
+        "Chci sudovat bakaláře"
+      ],
+      "responses": [
+        "Veškeré informace ohledně programů a studijních plánů nalezneš na webu https://fis.vse.cz/bakalarske-studium/bakalarske-programy/.\n\nPokud bys měl specifické dotazy, neváhej se obrátit přímo na studenty daných programů: https://www.stacisezeptat.cz/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "ukonceni-studia",
+      "patterns": [
+        "jak ukončit studium",
+        "chci ukončit studium",
+        "Ako mám postupovať ak chcem po prvom semestri ukončiť štúdium?",
+        "Jaký je postup v případě ukončení studia"
+      ],
+      "responses": [
+        "V případě nejasností ohledně ukončení či přerušení studia se prosím obrať na anše studijní oddělení tvé fakulty"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "seznamovaci-kurz",
+      "patterns": [
+        "kde se koná seznamovák",
+        "kdy se koná seznamovák",
+        "Řekni mi prosím nějaké informace k seznamovacímu kurzu",
+        "Jak je to se seznamovákem",
+        "Konají se na fisu seznamovací kurzy?"
+      ],
+      "responses": [
+        "Na FISu jsou pořádány seznamovací kurzy, na které budeš dlouho vzpomínat. Kromě tvých spolužáků, tam potkáš i třeba své budoucí profesory. Jezdí se zpravidla ve třech termínech na přelomu srpna a září. Seznamovací kurzy se konají ve sportovním areálu VŠE v Dobronicích. Účastníci si zde mohou zahrát tenis, volejbal, fotbal, projet se na kánoji nebo vyzkoušet si lezení. Více informací zde:\nhttps://fis.vse.cz/obecne-informace/seznamovaci-kurzy/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "dekan",
+      "patterns": [
+        "kdo je děkan",
+        "dekan na Fisu",
+        "Jak se jmenuje děkan na FISu",
+        "Kdo je děkan an FISU",
+        "fis děkan"
+      ],
+      "responses": ["Děkanem fakulty je prof. Ing. Jakub Fischer, Ph.D.."],
+      "context_set": ""
+    },
+
+    {
+      "tag": "studium-na-dalku",
+      "patterns": [
+        "studium na dálku",
+        "lze studovat kombinovaně",
+        "Dobrý den, je u Vás možnost dálkového studia?",
+        "Chtěl bych zeptat, jak fungují volitelné předměty a specializace při zvolení distanční formy studia?"
+      ],
+      "responses": [
+        "Na fakultě je možné studovat dálkově. Distančním program je podniková informatika. Detailnější informace o distančním studiu nalezneš zde: https://fis.vse.cz/magisterske-studium/magisterske-programy/program-podnikova-informatika/distancni-studium/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "data-analytics-distancne",
+      "patterns": [
+        "Dobry den, prosim vas je mozne studovat Data Analytics kombinovanou formou? Som pracujuci a chcel by som stodovat vo volnom case/cez vikend.",
+        "Chcela by som vedieť či je program Program Data a analytika pro business vedený ako kombinované štúdium alebo denné štúdium ? ",
+        "Je možný studovat data distančně",
+        "data analytics dalkove"
+      ],
+      "responses": [
+        "Program Data Analytics je čistě prezenčním studijním programem, jehož výuka probíhá během pracovních dnů."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "alternativni-program",
+      "patterns": [
+        "co znamená alternativní program? chtěl jsem podat dvě přihlášky, jednu na Data Analytics a druhou na Aplikovanou Informatiku, ale pak jsem uviděl, že můžu podat jen jednu přihlášku a mám jeden hlavní program a dva alternativní programy. Co se stane, pokud podám na Aplikovanou Informatiku jako hlavní program a na Data Analytics jako alternativní, ale udělám SCIO OSP a AJ? Musím povinně jít na Aplikovanou informatiku nebo mám na výběr jít na Aplikovanou informatiku nebo na Data Analytics?",
+        "co je to alternativni program?",
+        "alternativni program",
+        "jak funguje alternativní program?",
+        "musim jít na hlavní program?"
+      ],
+      "responses": [
+        "Pokud si jako hlavní program zvolíš například Aplikovanou informatiku a jako alternativní třeba Data Analytics, tak po splnění OSP a angličtiny budeš přijat na Aplikovnaou informatiku. Čili nyní je na tobě, aby sis dobře rozmyslel, který program dáš jako hlavní a který jako alternativní. Při splnění podmínek pro přijetí na hlavní program již není možné zařazení do programu alternativního."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "matematicky-seminar-prijimacky",
+      "patterns": [
+        "Jedna z variant přijetí bez přijímacího řízení je průměr 1,75 z angličtiny a matematiky, počítají se tyto průměry i z povinně volitelných seminářů ?",
+        "Počítá se průměr z matematického semináře",
+        "Můžu být přijat na zákaldě matematického semináře?",
+        "matematicky seminar, prijmacky"
+      ],
+      "responses": [
+        "Pokud máš v posledním ročníku místo klasického předmětu seminář, pak je možné započítat právě seminář."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "zacatek-v-letnim-semestru",
+      "patterns": [
+        "Je možnost začátku magisterského studia i v letním semestru?",
+        "Záčátek v letňáku",
+        "zacatek, studium v letnim semestru",
+        "můžu začít studovat v letnim semestru"
+      ],
+      "responses": ["Na FISu je možné začít studium pouze od zimního semestru"],
+      "context_set": ""
+    },
+
+    {
+      "tag": "prestupy-mezi-programy",
+      "patterns": [
+        "Dobrý den, mám dotaz ohledně přechodu z oboru na jiný obor na stejně fakultě, jsem na konci 3. semestru Aplikované informatiky ale chtěla bych přejít na Multimédia v ekonomické praxi",
+        "přestup na jiný obor v rámci fakulty",
+        "můžu přestupovat mezi obory v rámci fakulty",
+        "Je možnost přestupu mezi programy v rámci fakulty"
+      ],
+      "responses": ["Přestupy mezi programy nejsou ze zákona možné."],
+      "context_set": ""
+    },
+
+    {
+      "tag": "multimedia-v-praxi",
+      "patterns": [
+        "Jaké elektronické zařízení je dobře mít k dispozici? Bude mi popř stačit iPad, nebo je dobré ke studium Multimédia v ekonomické praxi mít notebook ( popř macOS / windows )",
+        "jaké jsou předměty v oboru multimédia v ekonomické praxi",
+        "Jak probíhá studium na multimediich",
+        "narocnost, multimedia"
+      ],
+      "responses": [
+        "Podrobnější informace a odpověď na tvůj dotaz nalezneš na stránce o multimédiích: https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-multimedia-v-ekonomicke-praxi/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "termin-magisterske-prace",
+      "patterns": [
+        "Termín odevzdání diplomové práce",
+        "Kdy se musí odevzdat diplomová práce?",
+        "Do kdy musím odevzdat diplomku",
+        "Jaký je deadline diplomky",
+        "termín diplomové práce",
+        "diplomová práce"
+      ],
+      "responses": [
+        "Informace k odevzdávání bakalářské práce nalezneš zde: https://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Odevzd%C3%A1n%C3%AD-diplomov%C3%A9-pr%C3%A1ce.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-kavarna",
+      "patterns": [
+        "Jaké kavárny jsou v okolí?",
+        "Kde si můžu dát kávu v okolí školy?",
+        "káva",
+        "energie",
+        "Potřebuju energii"
+      ],
+      "responses": [
+        "V okolí VŠE na Žižkově můžete navštívit The Miners, Coffee Break and Cake, Umbrella Lounge Bar nebo Coffee jako Kafe Doubledecker."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-predmet",
+      "patterns": [
+        "Můžeš mi říct informaace o předmětu",
+        "předmět",
+        "infromace o předmětu",
+        "Trendy II",
+        "Trendy a novinky v business analytice II",
+        "Popisy jednotlivých předmětů fakulty",
+        "Popis předmětů"
+      ],
+      "responses": [
+        "Trendy a novinky v business analytice II jsou 3 kreditový předmět, studovaný prezenčně, doporučený pro první ročník magisterského studia. Více informací o předmětu naleznete zde - https://insis.vse.cz/auth/katalog/syllabus.pl?predmet=181503"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-ucitel",
+      "patterns": [
+        "Potřebuji kontakt na učitele",
+        "Kdo vyučuje tento předmět",
+        "učitel",
+        "vyučující",
+        "profesor"
+      ],
+      "responses": [
+        "Vaše oblíbeného vyučující naleznete zde - https://insis.vse.cz/auth/lide/clovek.pl?id=44890"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-studijni-rad",
+      "patterns": [
+        "studijní řád",
+        "Kde můžu najít studijní řád?",
+        "řád školy",
+        "řád"
+      ],
+      "responses": [
+        "Studjní řád, ve kterém můžete najít mnoho důležitých informací o studiu, je dostupný na této adrese - https://www.vse.cz/wp-content/uploads/regulation/14718/SZR-do-2019-IV.-zmena.pdf"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-ucebna",
+      "patterns": [
+        "infromace o učebně",
+        "V jaké učebně máme další hodinu?",
+        "učebna",
+        "Do jaké mám jít učebny na další hodinu?"
+      ],
+      "responses": [
+        "Další hodinu máte v areálu Žižkova v Rajské budově. Konkrétní učebna je RB213. Více podrobností o této učebně můžete najít zde: https://insis.vse.cz/auth/mistnosti/?zobrazit_mistnost=1251;zpet=../katalog/rozvrhy_view.pl?rozvrh_student=149156,zobraz=1"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-rozvrh",
+      "patterns": [
+        "Jaký mám rozvrh?",
+        "Jaké mám hodiny tento týden?",
+        "Rozvrh",
+        "Co mám jako další předmět?"
+      ],
+      "responses": [
+        "Zde se nachází tvůj rozvrh - https://insis.vse.cz/auth/katalog/rozvrhy_view.pl?rozvrh_student_obec=1?zobraz=1;format=html"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-odevzdavarna",
+      "patterns": [
+        "Mám prázdnou odevzdávárnu?",
+        "Mám nějaké úkoly?",
+        "Odevzdávárna",
+        "Úkoly"
+      ],
+      "responses": [
+        "Máte prádnou odevzdávárnu, tudíž nemáte žádné úkoly k odevzdání"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-dokumentovy-strom",
+      "patterns": [
+        "Kde najdu soubory k předmětu?",
+        "Jak lze vyhledávat v dokumentovém stromu?",
+        "Vyhledávání v dokumentovém stromu",
+        "Kde najdu dokumentový strom?",
+        "dokumentový strom",
+        "dokumenty ke studiu",
+        "soubory v dokumentovém stromu"
+      ],
+      "responses": [
+        "Veškeré dokumenty k předmětům najdete v dokumentovém stromě v INSIS. Zde je odkaz: https://insis.vse.cz/auth/dok_server/"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "omluveni-predmetu",
+      "patterns": [
+        "Omluvení",
+        "Omluvení předmětů",
+        "Jak omluvit předmět?",
+        "Omluvení tělocvicku"
+      ],
+      "responses": [
+        "Jak postupovat při omlouvání předmětů? Vše nalezneš zde:\nhttps://vse.sharepoint.com/sites/intranet-studenti-FIS/SitePages/Omluven%C3%AD-p%C5%99edm%C4%9Btu.aspx"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "podekovani",
+      "patterns": [
+        "Díky",
+        "Děkuju",
+        "Děkuju ti",
+        "Pomohl jsi mi",
+        "Super",
+        "Paráda"
+      ],
+      "responses": [
+        "Jsem rád, že jsem mohl pomoci. Máš ještě nějaký dotaz?",
+        "Od toho tu jsem. Mohu ještě s něčím pomoci?",
+        "Nemáš zaco, pokud máš další dotaz, neváhej se na mě obrátit."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-fotka",
+      "patterns": [
+        "Jak si změním v Insisu svou fotku?",
+        "Fotka v insisu",
+        "Foto v insisu",
+        "Moje fotografie v insisu",
+        "Obrázek profilu v insis"
+      ],
+      "responses": [
+        "Svojí fotku v InSISu můžeš upravit zde: \nhttps://insis.vse.cz/auth/personalizace/vkladani_fotky.pl"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "otazka",
+      "patterns": [
+        "Můžu se zeptat?",
+        "Mám otázku",
+        "Můžu se tě na něco zeptat?",
+        "Dokážeš mi zodpovědět otázku?"
+      ],
+      "responses": ["No prosím, ptej se :)"],
+      "context_set": ""
+    },
+
+    {
+      "tag": "vtip",
+      "patterns": [
+        "Řekni mi nějaký vtip",
+        "Máš nějaké vtipy, které bys mi pověděl?",
+        "Řekni něco vtipného",
+        "chci se zasmát",
+        "vtip"
+      ],
+      "responses": ["Jdou dva a prostřední upadl"],
+      "context_set": ""
+    },
+
+    {
+      "tag": "komu-fandis",
+      "patterns": [
+        "Komu fandíš v hokeji?",
+        "Jakému týmu fandíš?",
+        "Fandíš nějakému týmu",
+        "Máš svůj oblíbený tým?"
+      ],
+      "responses": ["Fandím jedině VŠE, a to na všech akcích!"],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-moji-spoluzaci",
+      "patterns": [
+        "Kdo se mnou bude chodit na předmět?",
+        "Jak se dozvím svoje spolužáky?",
+        "Můžu se někde podívat na své spolužáky?",
+        "S kým budu chodit na hodiny?",
+        "Moji spolužáci"
+      ],
+      "responses": [
+        "Informace o tom, kdo s tebou bude chodit na jednotlivé předměty, se dozvíš zde: https://insis.vse.cz/auth/student/spoluzaci.pl"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "insis-e-index",
+      "patterns": [
+        "Kde najdu svůj prospěch?",
+        "Kde najdu přehled svých předmětů?",
+        "Kde najdu svůj index",
+        "Kde je e-index",
+        "Jak funguje index na VŠE?",
+        "e-index"
+      ],
+      "responses": [
+        "Index s tvým prospěchem je uložený v elektronickém indexu. Svůj E-index nalezneš zde: https://insis.vse.cz/auth/student/pruchod_studiem.pl"
+      ],
+      "context_set": ""
+    }
+  ]
+}

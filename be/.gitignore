@@ -1,0 +1,4 @@
+deploy.sh
+nltk/*
+!nltk/readme.md
+__pycache__/
